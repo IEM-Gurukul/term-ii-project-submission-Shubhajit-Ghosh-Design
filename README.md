@@ -7,15 +7,29 @@
 
 ## Problem Statement (max 150 words)
 
----
+---Managing library operations manually or with poorly structured systems leads to inefficiencies such as lost records, difficulty tracking borrowed books, and errors in maintaining member and inventory data. These challenges reduce productivity and increase administrative workload. A Library Management System aims to automate and streamline these processes by providing an organized platform to manage books, users, and transactions. The system will ensure accurate record-keeping, quick data retrieval, and improved user experience. By applying Object-Oriented Programming (OOP) principles, the system will be modular, scalable, and easy to maintain. It will also support future enhancements such as digital catalogs and automated notifications, making library operations more efficient and reliable.
 
 ## Target User
 
----
+---Primary Users: Librarians or library administrators
+
+Secondary Users: Students, faculty, or general library members
 
 ## Core Features
 
-- 
+- Add, update, and delete books in the catalog
+
+Register and manage library members
+
+Search books by title, author, or category
+
+Borrow and return books
+
+Track issued books and due dates
+
+Maintain transaction history
+
+Basic authentication system for librarian access
 - 
 - 
 
