@@ -19,29 +19,91 @@ Secondary Users: Students, faculty, or general library members
 
 - Add, update, and delete books in the catalog
 
-Register and manage library members
+- Register and manage library members
 
-Search books by title, author, or category
+- Search books by title, author, or category
 
-Borrow and return books
+- Borrow and return books
 
-Track issued books and due dates
+- Track issued books and due dates
 
-Maintain transaction history
+- Maintain transaction history
 
 Basic authentication system for librarian access
-- 
-- 
+- Key Features:
 
----
+A login interface where the librarian enters a username and password
+
+Credentials are verified against stored data (hardcoded or stored in a file/database)
+
+Access is granted only if the credentials match
+
+Unauthorized users are denied access with an error message
+- Working Process:
+
+Librarian enters login credentials
+
+System checks credentials against stored records
+
+If valid → access granted to admin functionalities
+
+If invalid → error message displayed and retry option given
+
+-Security Enhancements:
+
+Password masking during input
+
+Limited login attempts to prevent misuse
+
+Password encryption (basic hashing)
+
+Session-based access control
+--
 
 ## OOP Concepts Used
 
-- Abstraction:
-- Inheritance:
-- Polymorphism:
-- Exception Handling:
+- Abstraction:Abstract class LibraryItem defines common attributes like:
+
+ID
+
+Title
+
+Availability
+
+Abstract methods like borrow() and returnItem() provide a blueprint for subclasses.
+- Inheritance:Book, Magazine, Journal inherit from LibraryItem
+
+User base class extended by:
+
+Member
+
+Librarian
+- Polymorphism:Methods such as:
+
+displayDetails() behave differently for books, journals, etc.
+
+calculateFine() varies based on user type or item type
+- Exception Handling:Handles runtime errors such as:
+
+Borrowing unavailable books
+
+Invalid book/member ID
+
+Returning unissued books
+
+Custom exceptions:
+
+BookNotAvailableException
+
+InvalidUserException
 - Collections / Threads:
+- Collections:
+
+ArrayList / HashMap used to store books, users, and transactions
+
+Threads (optional enhancement):
+
+Background thread for due date reminders or notifications
 
 ---
 
