@@ -109,11 +109,34 @@ Background thread for due date reminders or notifications
 
 ## Proposed Architecture Description
 
----
+-Presentation Layer
+
+User interface (console or GUI)
+
+Accepts user inputs and displays outputs
+-Business Logic Layer
+
+Handles core operations:
+
+Borrowing/returning books
+
+Searching catalog
+
+Managing users
+
+Applies validation and rules
+-Data Management Layer
+
+Stores and manages data using collections or database
+
+Handles CRUD operations for books and users
 
 ## How to Run
 
----
+-
+-
+-
 
 ## Git Discipline Notes
+
 Minimum 10 meaningful commits required.
