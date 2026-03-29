@@ -133,10 +133,11 @@ Handles CRUD operations for books and users
 
 ## How to Run
 
--
--
--
+-Install Java
+-Clone the project repository
+-Compile the program
+-Run the program
 
 ## Git Discipline Notes
-
+- 
 Minimum 10 meaningful commits required.
